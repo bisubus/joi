@@ -32,7 +32,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "test": "lab -t 100 -a code -L",
+    "test": "lab -a code -S",
     "test-cov-html": "lab -r html -o coverage.html -a code",
     "toc": "node generate-readme-toc.js",
     "version": "npm run toc && git add API.md"
