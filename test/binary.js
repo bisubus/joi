@@ -29,7 +29,7 @@ describe('binary', () => {
         Joi.binary().validate('test', (err, value) => {
 
             expect(err).to.not.exist();
-            expect(value instanceof Buffer).to.equal(true);
+            expect(value instanceof Buffer || typeof Buffer.isBuffer === 'function').to.equal(true);
             expect(value.length).to.equal(4);
             expect(value.toString('utf8')).to.equal('test');
             done();
@@ -83,7 +83,7 @@ describe('binary', () => {
             schema.validate(input.toString('base64'), (err, value) => {
 
                 expect(err).to.not.exist();
-                expect(value instanceof Buffer).to.equal(true);
+                expect(value instanceof Buffer || typeof Buffer.isBuffer === 'function').to.equal(true);
                 expect(value.toString()).to.equal('abcdef');
                 done();
             });
