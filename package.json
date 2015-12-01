@@ -31,6 +31,7 @@
     "markdown-toc": "0.11.x"
   },
   "scripts": {
+    "build": "webpack",
     "test": "lab -t 100 -a code -L",
     "test-cov-html": "lab -r html -o coverage.html -a code",
     "toc": "node generate-readme-toc.js",
