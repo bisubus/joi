@@ -4,7 +4,7 @@
 
 const Lab = require('lab');
 const Code = require('code');
-const Joi = require('..');
+const Joi = require('../dist/joi-browser');
 const Helper = require('./helper');
 
 

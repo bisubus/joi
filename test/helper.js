@@ -3,7 +3,7 @@
 // Load modules
 
 const Code = require('code');
-const Joi = require('../');
+const Joi = require('../dist/joi-browser');
 
 
 // Declare internals

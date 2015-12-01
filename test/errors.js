@@ -4,7 +4,7 @@
 
 const Lab = require('lab');
 const Code = require('code');
-const Joi = require('../lib');
+const Joi = require('../dist/joi-browser');
 
 
 // Declare internals
