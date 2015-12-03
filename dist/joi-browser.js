@@ -4953,10 +4953,10 @@ return /******/ (function(modules) { // webpackBootstrap
   \*******************************/
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 	
 	module.exports = function () {
-		return {
+		return typeof moment === 'function' ? moment : {
 			isValid: function isValid() {
 				return false;
 			}
